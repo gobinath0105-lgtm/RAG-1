@@ -1,26 +1,48 @@
+
 import os
+import streamlit as st
 from dotenv import load_dotenv
 from groq import Groq
 
-# Load environment variables
+
+# =====================================
+# 1. LOAD API KEY
+# =====================================
+
 load_dotenv()
 
-# Get API key
 api_key = os.getenv("GROQ_API_KEY")
 
-if not api_key:
-    raise ValueError("GROQ_API_KEY not found in .env file")
+# If local .env key is unavailable,
+# get the key from Streamlit Cloud Secrets
 
-# Connect to Groq
+if not api_key:
+    try:
+        api_key = st.secrets["GROQ_API_KEY"]
+    except Exception:
+        api_key = None
+
+if not api_key:
+    raise ValueError("GROQ_API_KEY is not configured.")
+
+
+# =====================================
+# 2. CONNECT TO GROQ
+# =====================================
+
 client = Groq(api_key=api_key)
 
 
+# =====================================
+# 3. GENERATE ANSWER
+# =====================================
+
 def generate_answer(query, results):
 
-    # Prepare context from retrieved chunks
     context = ""
 
     for i, result in enumerate(results):
+
         page = result["metadata"]["page"]
         source = result["metadata"]["source"]
         text = result["context"]
@@ -32,9 +54,10 @@ def generate_answer(query, results):
         Content: {text}
         """
 
-    # Send context and question to Groq
     response = client.chat.completions.create(
+
         model="openai/gpt-oss-20b",
+
         messages=[
             {
                 "role": "system",
@@ -42,6 +65,7 @@ def generate_answer(query, results):
                 You are a helpful PDF question-answering assistant.
 
                 Answer using ONLY the provided context.
+
                 If the answer is not in the context, say:
                 "I could not find this information in the document."
 
@@ -60,24 +84,9 @@ def generate_answer(query, results):
                 """
             }
         ],
+
         temperature=0.2,
         max_completion_tokens=1024
     )
 
     return response.choices[0].message.content
-import os
-import streamlit as st
-from dotenv import load_dotenv
-
-load_dotenv()
-
-GROQ_API_KEY = os.getenv("GROQ_API_KEY")
-
-if not GROQ_API_KEY:
-    try:
-        GROQ_API_KEY = st.secrets["GROQ_API_KEY"]
-    except Exception:
-        GROQ_API_KEY = None
-
-if not GROQ_API_KEY:
-    raise ValueError("GROQ_API_KEY is not configured.")
