@@ -1,0 +1,79 @@
+[
+    {
+        "context": "GOBINATH AI Engineer Intern Candidate |B.Tech ArtificialIntelligence and Data Science Udumalpet, Tamil Nadu, India|8098013829 | gobinath0105@gmail.com LinkedIn: linkedin.com/in/gobinath-gobi |GitHub: github.com/gobinath0105-lgtm PROFESSIONAL SUMMARY Second-year B.Tech ArtificialIntelligenceand Data",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "Second-year B.Tech ArtificialIntelligenceand Data Science student with hands-on Machine Learning and Deep Learning projects inPython, Scikit-learn, and TensorFlow/Keras, including CNN-based image classification (99.06% testaccuracy on MNIST). Currently building skillsinNLP, LLMs, embeddings, and",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "building skillsinNLP, LLMs, embeddings, and RAG with LangChain. Seeking an AI Engineer internship to apply practical AI skillson real-world problems. EDUCATION PA College ofEngineering and Technology, Pollachi 2025 – 2029 Class 12: 75% |Class 10: 85% TECHNICAL SKILLS Programming: Python,",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "10: 85% TECHNICAL SKILLS Programming: Python, Object-Oriented Programming, Data Structures and Algorithms Data & Databases: SQL, Pandas, Matplotlib Machine Learning: Scikit-learn,Linear/Logistic Regression, KNN, Decision Trees, Random Forest, SVM, Naive Bayes, K-Means, PCA, Gradient Boosting,",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "Naive Bayes, K-Means, PCA, Gradient Boosting, XGBoost, Feature Engineering, Cross-Validation, Model Evaluation, Regularization Deep Learning: TensorFlow, Keras, Neural Networks, CNN, RNN, LSTM, Transfer Learning, Transformers, Attention Mechanism Generative AI / NLP (Learning): NLP and LLM",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "Generative AI / NLP (Learning): NLP and LLM fundamentals, Embeddings, Vector Databases, Semantic Search, Retrieval-Augmented Generation (RAG), LangChain AIApplication Development: Streamlit,OpenCV, YOLO, FastAPI / Flask (basics) Tools: Git,GitHub, Jupyter Notebook, VS Code, n8n PROJECTS MNIST",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "Jupyter Notebook, VS Code, n8n PROJECTS MNIST Handwritten DigitClassification • Builta CNN (Conv2D, MaxPooling, Flatten, Dense) on 60,000 trainingand 10,000 testimages, achieving ~99.06% test accuracy. • Normalized pixel values to the 0–1 range and ran predictions on a custom handwritten",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "range and ran predictions on a custom handwritten digitimage. Cat vs Dog Image Classification • Trained a CNN on the Microsoft Cats vs Dogs dataset (Hugging Face) with 128×128 resized, normalized images, reaching ~79.1% test accuracy. • Applied Dropout to improve generalization; evaluated with a",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "to improve generalization; evaluated with a confusion matrix and classification report; predicted on new images. House Price Prediction • Builta Linear Regression model using area, bedrooms, bathrooms, parking, age, and location, with categorical encoding and a train-testsplit. • Achieved ~0.997 R²",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "and a train-testsplit. • Achieved ~0.997 R² on the test set;evaluated with RMSE and R². Customer Churn Prediction • Builta Logistic Regression classifierusing age, tenure, monthly charges, support calls,contract, internet service, and payment method. • Converted churn tobinary labels;achieved ~65%",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    },
+    {
+        "context": "• Converted churn tobinary labels;achieved ~65% test accuracy and evaluated with classificationmetrics. HACKATHON / PROJECT EXPO • Participated inthe Quantexa Hackathon. • Participated ina college Project Expo, presenting an n8n Email Automation project. LANGUAGES Tamil,English",
+        "metadata": {
+            "page": 1,
+            "source": "data/Gobinath_Resume.pdf"
+        }
+    }
+]
